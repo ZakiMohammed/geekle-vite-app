@@ -1,7 +1,7 @@
 import { findFactorial } from './factorial';
 
 const html = document.querySelector<HTMLHtmlElement>('html')!;
-const span = document.querySelector<HTMLSpanElement>('span')!;
+const img = document.querySelector<HTMLSpanElement>('img')!;
 const result = document.querySelector<HTMLHeadingElement>('article h2')!;
 const article = document.querySelector<HTMLElement>('article')!;
 const form = document.querySelector<HTMLFormElement>('form')!;
@@ -29,11 +29,12 @@ const onReset = () => {
   article.setAttribute('hidden', 'true');
 };
 
-const onHeartDoubleClick = () => {
+const onViteClick = () => {
   html.setAttribute('data-theme', darkTheme ? 'light': 'dark');
   darkTheme = !darkTheme;
 }
 
 form.addEventListener('submit', onSubmit);
 form.addEventListener('reset', onReset);
-span.addEventListener('dblclick', onHeartDoubleClick);
+img.addEventListener('dblclick', onViteClick);
+img.addEventListener('touchstart', onViteClick);
