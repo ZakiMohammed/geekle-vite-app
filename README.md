@@ -2,6 +2,8 @@
 
 Geekle TypeScript Junior Session 2023.
 
+App Link: https://geekle-vite-app.netlify.app/
+
 ### Initial Setup
 
 ```
