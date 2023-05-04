@@ -8,7 +8,7 @@ Geekle TypeScript Junior Session 2023.
 npm create vite@latest
 
 # or
-npm create vite@latest my-vue-app --template vanilla-ts
+npm create vite@latest geekle-vite-app --template vanilla-ts
 ```
 
 For `TypeScript` add this package too, for Type Safety checks, otherwise Vite only transpile the code and doesn't do the type checking:
